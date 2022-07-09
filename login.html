@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-content">
+            <div class="logo" onclick="window.location.href='index.html'">
+            </div>
+            <span>欢迎登录</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-content">
+            <div class="form">
+                <div class="form-content">
+                    <div class="tab-list">
+                        <ul>
+                            <li class="current">密码登录</li>
+                            <li>验证码登录</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- 账号密码登录模块 -->
+                        <div class="item login-pass" style="display: block;">
+                            <!-- 错误提示 -->
+                            <div class="tips">
+                                <div class="icon">
+                                    <span class="error">&#xe685;</span>
+                                </div>
+                                <div class="tips1">
+                                    <p class="content"></p>
+                                </div>
+                            </div>
+                            <div class="inputAccount">
+                                <div class="user">
+                                    <span class="userlogo">
+                                        &#xe62b;
+                                    </span>
+                                </div>
+                                <div class="inputuserinfo">
+                                    <input type="text" placeholder="账号名/邮箱/手机号" class="account">
+                                </div>
+                            </div>
+                            <div class="inputPass">
+                                <div class="pass">
+                                    <span class="passlogo">
+                                        &#xe644;
+                                    </span>
+                                </div>
+                                <div class="inputpassinfo">
+                                    <input type="password" placeholder="请输入密码" class="password">
+                                </div>
+                            </div>
+                            <div class="register">
+                                <a href="register.html">
+                                    <p>没有账号？免费注册</p>
+                                </a>
+                            </div>
+                            <div class="submitbox">
+                                <button type="submit" name="submit">登录</button>
+                            </div>
+                        </div>
+                        <!-- 验证码登录模块 -->
+                        <div class="item login-mess">
+                            <!-- 错误提示 -->
+                            <div class="tips">
+                                <div class="icon">
+                                    <span class="error">&#xe685;</span>
+                                </div>
+                                <div class="tips1">
+                                    <p class="content"></p>
+                                </div>
+                            </div>
+                            <div class="inputPhoneNumber">
+                                <div class="phonenumber">
+                                    <span class="phonelogo">
+                                        &#xe72a;
+                                    </span>
+                                </div>
+                                <div class="inputphoneinfo">
+                                    <input type="text" placeholder="请输入手机号" class="phone">
+                                </div>
+                            </div>
+                            <div class="inputMess">
+                                <div class="mess">
+                                    <span class="messlogo">
+                                        &#xe842;
+                                    </span>
+                                </div>
+                                <div class="inputmessinfo">
+                                    <input type="text" maxlength="4" placeholder="请输入验证码" class="message">
+                                    <button>点击获取验证码</button>
+                                </div>
+                            </div>
+                            <div class="register">
+                                <a href="register.html">
+                                    <p>没有账号？免费注册</p>
+                                </a>
+                            </div>
+                            <div class="submitbox1">
+                                <button type="submit" name="submit">登录</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

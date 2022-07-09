@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/mycart.css">
+    <script src="js/data.js"></script>
+    <script src="js/mycart.js" defer></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-content">
+            <div class="logo" onclick="window.location.href='index.html'">
+            </div>
+            <span>我的购物车</span>
+        </div>
+    </div>
+    <div class="page-main">
+        <div class="container card_wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="allcheck">
+                            <i class="iconfont icon-duihao allBtn"></i> 全选
+                        </th>
+                        <th class="col_img">&nbsp;</th>
+                        <th class="col_name">商品名称</th>
+                        <th class="col-price">单价</th>
+                        <th class="col-num">数量</th>
+                        <th class="col-total">小计</th>
+                        <th class="col-action">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="section clearfix">
+                <div class="section-left">
+                    <a href="index.html" class="go_shopping">继续购物</a>
+                    <span class="cart-total">
+                        共
+                        <i class="data_sum">3</i>
+                        件商品，已选择
+                        <i class="data_select">0</i>
+                        件
+                    </span>
+                </div>
+                <span class="total_price">
+                    合计
+                    <em class="data_totalsum">0</em>
+                    元
+                    <a href="javascript:" class=" btn-disabled">去结算
+ 
+                        <div  class="no-select-tip" >
+                            请勾选需要结算的商品
+                        </div>
+                    </a>
+                </span>
+            </div>
+            <!--推荐商品区 -->
+            <div class="cart-recommend">
+                <h2 class="recommend-title">
+                    <span>买购物车中的商品的人还买了</span>
+                </h2>
+                <div class="recommend-bd">
+                    <ul class="recommend-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

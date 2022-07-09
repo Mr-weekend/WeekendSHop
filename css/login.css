@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link,
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: rgb(0, 195, 245);
+}
+
+@font-face {
+    font-family: 'user';
+    src: url('../images/user.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'password';
+    src: url('../images/pass.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'error';
+    src: url('../images/error.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'phonemess';
+    src: url('../images/phone&&mess.ttf') format('truetype');
+}
+
+body {
+    min-width: 1240px;
+    background-color: rgb(245, 245, 245);
+}
+
+.top {
+    width: 100%;
+    height: 70px;
+    background-color: white
+}
+
+.top-content {
+    width: 1240px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+    width: 128px;
+    background-image: url("../images/logo.png");
+    margin: 10px auto;
+    float: left;
+    cursor: pointer;
+}
+
+.top-content span {
+    font-size: 25px;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+    background-color: #001f47;
+}
+
+.main-content {
+    width: 1240px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url('../images/login_bg.jpg');
+    position: relative;
+    opacity: .9;
+}
+
+.form {
+    position: absolute;
+    width: 350px;
+    min-height: 275px;
+    background-color: white;
+    margin: 100px 800px;
+}
+
+.form-content {
+    width: 280px;
+    height: 235px;
+    margin: 10px auto;
+}
+
+.tab-list {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.tab-list li {
+    list-style-type: none;
+    float: left;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tab-list .current {
+    border-bottom: 2px solid black;
+}
+
+.item {
+    display: none;
+}
+
+.login-pass {
+    width: 280px;
+    height: 250px;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+.inputAccount,
+.inputPhoneNumber {
+    width: 278px;
+    border: 1px solid gray;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputPass,
+.inputMess {
+    width: 278px;
+    border: 1px solid gray;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.user,
+.pass,
+.phonenumber,
+.mess {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.userlogo {
+    font-family: "user" !important;
+    font-size: 40px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #ccc;
+}
+
+.inputuserinfo,
+.inputpassinfo,
+.inputphoneinfo,
+.inputmessinfo {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.account,
+.password,
+.phone,
+.message {
+    width: 223px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.passlogo {
+    font-family: "password" !important;
+    font-size: 40px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #ccc;
+}
+
+.tips {
+    width: 280px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fef2f2;
+    margin-bottom: 10px;
+    border: 1px solid #ff934c;
+    border-color: #ffb4a8;
+    position: relative;
+    display: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+
+.error {
+    font-family: "error" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ff934c;
+}
+
+.tips1 {
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+}
+
+.content {
+    font-size: 10px;
+}
+
+.login-pass .submitbox,
+.login-mess .submitbox1 {
+    width: 280px;
+}
+
+.submitbox button,
+.submitbox1 button {
+    width: 280px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    background: rgb(0, 195, 245);
+    border: none;
+    border-radius: 3.2px;
+    cursor: pointer;
+}
+
+.phonelogo {
+    font-family: "phonemess" !important;
+    font-size: 40px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #ccc;
+}
+
+.messlogo {
+    font-family: "phonemess" !important;
+    font-size: 40px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #ccc;
+}
+
+.send {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.send-btn-link {
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+.inputMess button {
+    height: 30px;
+    line-height: 27px;
+    position: absolute;
+    top: 5px;
+    right: -37px;
+}
+
+.register {
+    width: 135px;
+    height: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}

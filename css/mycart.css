@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i,
+a {
+    cursor: pointer;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../images/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jia:before {
+    content: "\e632";
+}
+
+.icon-duihao:before {
+    content: "\e633";
+}
+
+.icon-chenghao:before {
+    content: "\e619";
+}
+
+.icon-ziyuan:before {
+    content: "\e62e";
+}
+
+.icon-jian:before {
+    content: "\e774";
+}
+
+body {
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    min-width: 1226px;
+}
+
+.top {
+    width: 100%;
+    height: 70px;
+    background-color: white
+}
+
+.top-content {
+    width: 1240px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+    width: 128px;
+    background-image: url("../images/logo.png");
+    margin: 10px auto;
+    float: left;
+    cursor: pointer;
+}
+
+.top-content span {
+    font-size: 25px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.page-main {
+    width: 100%;
+    overflow: hidden;
+    padding: 38px 0;
+}
+
+.container {
+    width: 1226px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* 表格样式开始 */
+
+table {
+    width: 1226px;
+    text-align: center;
+    color: #424242;
+    font-size: 14px;
+    overflow: hidden;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+table th {
+    height: 70px;
+    font-weight: normal;
+}
+
+.col_check,
+.allcheck {
+    width: 110px;
+    text-align: left;
+    user-select: none;
+}
+
+.col_img {
+    width: 120px;
+    height: 80px;
+    text-align: left;
+}
+
+.col_img img {
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.col_name {
+    width: 380px;
+    text-align: left;
+}
+
+.col-price {
+    width: 140px;
+    padding-right: 18px;
+    width: 110px;
+}
+
+.col_num {
+    width: 150px;
+}
+
+.col-total {
+    width: 120px;
+    padding-right: 81px;
+    text-align: right;
+}
+
+.col_action {
+    width: 80px;
+}
+
+.col_check .iconfont,
+.allcheck .iconfont {
+    width: 20px;
+    height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    line-height: 18px;
+    border: 1px solid #e0e0e0;
+    margin: 0 15px 0 24px;
+    font-size: 20px;
+    transition: all .3s;
+    vertical-align: middle;
+}
+
+
+/*  事件
+点击后变色，字体变成白色
+*/
+
+.col_check .iconfont:hover,
+.allcheck .iconfont:hover {
+    color: #757575;
+}
+
+.check-color {
+    /* 强制提升权重 */
+    color: white !important;
+    background-color: rgb(0, 195, 245);
+}
+
+thead tr {
+    height: 70px;
+}
+
+tbody tr {
+    height: 116px;
+    text-align: center;
+    padding: 15px 26px 15px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+tbody tr .col_name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+tbody .col_num {
+    width: 150px;
+    padding: 0 45px;
+    position: relative;
+}
+
+tbody .col_num .pl {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: #424242;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+}
+
+tbody .col_num .goods_num {
+    float: left;
+    width: 70px;
+    height: 38px;
+    box-sizing: border-box;
+    line-height: 38px;
+    padding: 0;
+    padding-left: 31px;
+    border-width: 0;
+    color: #424242;
+    font-size: 16px;
+    outline: none;
+}
+
+tbody .col_num span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    color: #b0b0b0;
+    display: none;
+}
+
+tbody tr .icon-jia,
+tbody tr .icon-jian {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #757577;
+}
+
+tbody tr .icon-jian:hover,
+.icon-jia:hover {
+    background-color: #e0e0e0;
+}
+
+tbody tr .icon-jian {
+    float: left;
+}
+
+tbody tr .icon-jia {
+    float: right;
+}
+
+tbody tr .col-total {
+    color: rgb(207, 10, 44);
+}
+
+tbody tr .col_action .del {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    transition: all .3s;
+}
+
+tbody tr .del:hover {
+    color: white;
+    font-weight: 700;
+    background-color: red;
+}
+
+
+/* 
+继续购物 */
+
+.section {
+    height: 50px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.section a {
+    color: #757575;
+}
+
+.section-left {
+    float: left;
+}
+
+.section-left .go_shopping {
+    line-height: 50px;
+    margin-left: 32px;
+    transition: all .3s;
+}
+
+.section-left .go_shopping:hover {
+    color: rgb(0, 195, 245);
+}
+
+.cart-total {
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #eee;
+    color: #757575;
+}
+
+.cart-total .data_sum,
+.cart-total .data_select {
+    color: rgb(0, 195, 245);
+}
+
+.total_price {
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    padding-left: 13px;
+    color: rgb(207, 10, 44);
+}
+
+.total_price .data_totalsum {
+    color: rgb(207, 10, 44);
+    font-size: 30px;
+}
+
+.btn-disabled {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    margin-left: 50px;
+    vertical-align: top;
+    background: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #b0b0b0;
+    cursor: default;
+}
+
+
+/* 点击全选后样式 */
+
+.btn-primary {
+    background: rgb(0, 195, 245);
+    border-color: #ff6700;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.btn {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .18);
+}
+
+
+/* 全选时，出现 */
+
+.no-select-tip {
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    top: -58px;
+    right: 0px;
+    background-color: #fff;
+    border: 1px solid rgb(0, 195, 245);
+    color: rgb(0, 195, 245);
+    text-align: center;
+}
+
+.no-select-tip::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg) translateX(-50%);
+    border-width: 0 1px 1px 0;
+    border-color: #ff6700;
+    border-style: solid;
+    background-color: #fff;
+    content: "";
+}
+
+.cart-recommend {
+    width: 100%;
+    height: 679px;
+    margin-top: 60px;
+}
+
+.cart-recommend h2 {
+    height: 50px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 400;
+    color: #757575;
+    border-top: 1px solid #e0e0e0;
+}
+
+.cart-recommend h2 span {
+    position: absolute;
+    height: 40px;
+    width: 482px;
+    text-align: center;
+    left: 50%;
+    top: -20px;
+    z-index: 22;
+    transform: translateX(-50%);
+}
+
+.recommend-bd {
+    height: 628px;
+}
+
+.recommend-list {
+    width: 1226px;
+    height: 628px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.recommend-item {
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.recommend-item a {
+    display: block;
+    position: relative;
+}
+
+.recommend-item a img {
+    display: block;
+    margin: 40px auto 20px;
+    width: 140px;
+    height: 140px;
+}
+
+.recommend-item .recommend-name,
+.recommend-price,
+.recommend-tips {
+    text-align: center;
+    margin: 0 10px 10px;
+    height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333;
+}
+
+.recommend-item .recommend-price {
+    margin-bottom: 10px;
+    color: rgb(207, 10, 44);
+}
+
+.recommend-item .recommend-tips {
+    color: #757575;
+}
+
+.recommend-item .recommend-shoppingcart {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: rgb(0, 195, 245);
+    text-align: center;
+    transition: all .3s;
+    background-color: #fff;
+    border: 1px solid rgb(0, 195, 245);
+}
+
+.recommend-item:hover .recommend-shoppingcart {
+    bottom: -7px;
+}
+
+.recommend-shoppingcart:hover {
+    color: white;
+    background-color: rgb(0, 195, 245);
+}

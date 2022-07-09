@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1240px;
+    background-color: rgb(245, 245, 245);
+}
+
+@font-face {
+    font-family: 'cartlogo';
+    src: url('../images/cartlogo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'searchlogo';
+    src: url('../images/searchlogo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'right';
+    src: url('../images/right.ttf') format('truetype');
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link,
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: rgb(0, 195, 245);
+}
+
+.header {
+    width: 100%;
+}
+
+
+/* 顶部样式开始 */
+
+.top {
+    width: 100%;
+    height: 30px;
+    background-color: #fafafc;
+}
+
+.top-content {
+    width: 1240px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #666;
+    font-size: 13px;
+}
+
+.welcome {
+    float: left;
+    height: 30px;
+}
+
+.top-right {
+    float: right;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.top-right>:last-child {
+    color: rgb(0, 195, 245);
+}
+
+.cartlogo {
+    font-family: "cartlogo" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(0, 195, 245);
+}
+
+.cart {
+    display: inline;
+    height: 30px;
+    width: 100px;
+    float: right;
+    cursor: pointer;
+}
+
+.cart a {
+    margin: 0 7px;
+}
+
+
+/* 顶部样式结束 */
+
+
+/* 导航栏样式开始 */
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: relative;
+}
+
+.nav-content {
+    width: 1240px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.nav-content>.logo {
+    float: left;
+    height: 50px;
+    width: 128px;
+    background-image: url("../images/logo.png");
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.nav-menu {
+    width: 612px;
+    float: right;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.nav-menu>li {
+    float: left;
+    width: 97px;
+    height: 70px;
+}
+
+.nav-menu>li>a:hover {
+    color: rgb(0, 195, 245);
+}
+
+.search {
+    border: 1px solid rgb(63, 63, 63);
+    width: 170px;
+    height: 30px;
+    float: right;
+    margin: 20px auto;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+
+.nav-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    top: 70px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+    z-index: 2;
+}
+
+.nav-list .content {
+    width: 1200px;
+    height: 100px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.logo {
+    height: 80px;
+    width: 64px;
+}
+
+.content-tittle {
+    margin-top: -32px;
+    text-align: center;
+}
+
+.content li {
+    float: left;
+    margin-left: 80px;
+}
+
+.content>ul>:first-child {
+    margin-left: 0;
+}
+
+.more,
+.more p {
+    display: inline;
+}
+
+.more {
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    cursor: pointer;
+}
+
+.right {
+    font-family: "right" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+    top: 1px;
+}
+
+.more:hover .right {
+    color: rgb(0, 195, 245);
+}
+
+.more:hover a {
+    color: rgb(0, 195, 245);
+}
+
+.nav-menu li a {
+    height: 70px;
+}
+
+.nav-menu>:nth-child(2)>:nth-child(2) .more {
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.search input {
+    top: 26px;
+    position: absolute;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    width: 128px;
+    font-size: 16px;
+    margin-left: 13px;
+    display: inline-block;
+}
+
+.search a {
+    top: 12px;
+    position: absolute;
+    margin-left: 144px;
+}
+
+.searchlogo {
+    font-family: "searchlogo" !important;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(100, 100, 100);
+}
+
+.searchlogo:hover {
+    color: black;
+}
+
+
+/* 导航栏样式结束 */
+
+
+/* 轮播图样式开始 */
+
+.banner {
+    width: 1240px;
+    height: 500px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+.picture>.pic_current {
+    opacity: 1;
+}
+
+.picture>li {
+    transition: opacity 300ms ease-in-out 0s;
+    opacity: 0;
+    position: absolute;
+}
+
+.button {
+    position: absolute;
+    z-index: 1;
+    width: 35px;
+    height: 50px;
+    line-height: 50px;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(-15px);
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.button span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 40%;
+    border-top: 2px solid white;
+}
+
+.left_button>span {
+    border-left: 2px solid white;
+    transform: rotate(-45deg) translateY(-9px);
+    left: 65%;
+}
+
+.right_button>span {
+    border-right: 2px solid white;
+    transform: rotate(45deg) translateY(-9px);
+    right: 65%;
+}
+
+.left_button {
+    border-radius: 30% 30% 30% 30%;
+    left: -8px;
+}
+
+.right_button {
+    border-radius: 30% 30% 30% 30%;
+    right: -8px;
+}
+
+.dot {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    border-radius: 12px;
+    height: 22px;
+    cursor: default;
+}
+
+.dot>li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 0 2.5px;
+}
+
+.dot>.dot_current {
+    background-color: rgb(0, 195, 245);
+    cursor: pointer;
+}
+
+
+/*轮播图样式结束*/
+
+
+/*页面主体内容开始*/
+
+.main {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* 限时购样式开始 */
+
+.seckill {
+    width: 100%;
+    height: 365px;
+}
+
+.head-box {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.tittle {
+    font-size: 20px;
+}
+
+.time {
+    margin-left: 15px;
+}
+
+.head-box p {
+    float: left;
+    text-align: center;
+}
+
+.viewmore {
+    float: right;
+}
+
+.viewmore:hover a {
+    color: #ff6700;
+}
+
+.viewmore:hover .right {
+    color: #ff6700;
+}
+
+.time,
+.countdown {
+    float: left;
+}
+
+.time>p {
+    color: rgb(134, 134, 134);
+}
+
+.countdown>span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(207, 10, 44);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.content-box {
+    width: 100%;
+}
+
+.content-box>.box {
+    float: left;
+    margin-left: 10px;
+    width: 240px;
+    height: 300px;
+    background-color: white;
+    transition: all ease-in-out .2s;
+}
+
+.content-box>.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 3px 3px #ccc;
+}
+
+.content-box>:first-child {
+    margin-left: 0;
+}
+
+.content-box a:hover {
+    color: black;
+}
+
+.commodityImages {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.commodityImages>img {
+    width: 200px;
+    height: 200px;
+}
+
+.commodityTittle,
+.commodityDesc {
+    text-align: center;
+}
+
+.commodityTittle {
+    font-weight: bold;
+}
+
+.commodityDesc {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.price {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.price p {
+    display: inline;
+    font-size: 16px;
+    text-align: center;
+}
+
+.currentPrice {
+    color: rgb(207, 10, 44);
+}
+
+.commodityDesc,
+.originalPrice {
+    color: #b0b0b0;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+}
+
+
+/* 限时购样式结束 */
+
+
+/* 分类版块样式开始 */
+
+.phone,
+.laptop,
+.pad {
+    width: 100%;
+    height: 785px;
+}
+
+.phone>.content-box,
+.laptop>.content-box,
+.pad>.content-box {
+    width: 100%;
+}
+
+.phone>.content-box>.f1,
+.phone>.content-box>.f2,
+.laptop>.content-box>.f1,
+.laptop>.content-box>.f2,
+.pad>.content-box>.f1,
+.pad>.content-box>.f2 {
+    width: 100%;
+    height: 350px;
+    margin: 5px auto;
+}
+
+.phone>.content-box>.f2,
+.laptop>.content-box>.f2,
+.pad>.content-box>.f2 {
+    margin-top: 10px;
+}
+
+.phone>.content-box>.f1 .box,
+.phone>.content-box>.f2 .box,
+.laptop>.content-box>.f1 .box,
+.laptop>.content-box>.f2 .box,
+.pad>.content-box>.f1 .box,
+.pad>.content-box>.f2 .box {
+    float: left;
+    width: 302.5px;
+    height: 350px;
+    background-color: white;
+    margin-left: 10px;
+    transition: all ease-in-out .2s;
+}
+
+.phone .box:hover,
+.laptop .box:hover,
+.pad .box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 3px 3px #ccc;
+}
+
+.phone>.content-box>.f1 :first-child,
+.phone>.content-box>.f2 :first-child,
+.laptop>.content-box>.f1 :first-child,
+.laptop>.content-box>.f2 :first-child,
+.pad>.content-box>.f1 :first-child,
+.pad>.content-box>.f2 :first-child {
+    margin-left: 0;
+}
+
+.phone>.content-box>.f1 .commodityImages,
+.phone>.content-box>.f1 .commodityImages>img,
+.phone>.content-box>.f2 .commodityImages,
+.phone>.content-box>.f2 .commodityImages>img,
+.laptop>.content-box>.f1 .commodityImages,
+.laptop>.content-box>.f1 .commodityImages>img,
+.laptop>.content-box>.f2 .commodityImages,
+.laptop>.content-box>.f2 .commodityImages>img,
+.pad>.content-box>.f1 .commodityImages,
+.pad>.content-box>.f1 .commodityImages>img,
+.pad>.content-box>.f2 .commodityImages,
+.pad>.content-box>.f2 .commodityImages>img {
+    width: 250px;
+    height: 250px;
+}
+
+.phone>.content-box>.f1 .commodityImages,
+.phone>.content-box>.f2 .commodityImages,
+.laptop>.content-box>.f1 .commodityImages,
+.laptop>.content-box>.f2 .commodityImages,
+.pad>.content-box>.f1 .commodityImages,
+.pad>.content-box>.f2 .commodityImages {
+    margin: 0 auto;
+}
+
+.phone .price p,
+.laptop .price p,
+.pad .price p {
+    display: block;
+    text-align: center;
+}
+
+
+/* 分类版块样式结束 */
+
+
+/* 页面主体内容结束 */
+
+
+/* 页脚样式开始 */
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.content-footer {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-footer>.logo {
+    float: left;
+    height: 50px;
+    width: 128px;
+    background-image: url("../images/logo.png");
+}
+
+.copyright {
+    float: right;
+}
+
+.copyright :last-child {
+    float: right;
+}
+
+
+/* 页脚样式结束 */

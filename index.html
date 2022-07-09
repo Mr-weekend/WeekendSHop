@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周末商城</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部：顶部导航、导航栏、轮播图 -->
+    <div class="header">
+        <!-- 顶部菜单 -->
+        <div class="top">
+            <div class="top-content">
+                <!-- 欢迎 -->
+                <div class="welcome">
+                    <a href="index.html">欢迎光临周末商城~</a>
+                </div>
+                <!-- 购物车 -->
+                <div class="cart">
+                    <a href="mycart.html">
+                        <span class="cartlogo">&#xf0179;</span>
+                        <span class="my">我的购物车</span>
+                    </a>
+                </div>
+                <!-- 登录注册 -->
+                <div class="top-right">
+                    <a href="login.html">您好，请登录</a>
+                    <span>|</span>
+                    <a href="register.html">免费注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav">
+            <div class="nav-content">
+                <!-- 网站logo -->
+                <div class="logo" onclick="window.location.href='index.html'">
+                </div>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <input type="text">
+                    <a href="#"><span class="searchlogo">&#xe622;</span></a>
+                </div>
+                <!-- 导航主体 -->
+                <ul class="nav-menu ">
+                    <!-- 手机 -->
+                    <li>
+                        <a href="">手机</a>
+                        <div class="nav-list">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.mi.com/shop" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/mi.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">小米</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.meizu.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/meizu.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">魅族</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vivo.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/vivo.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">VIVO</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.oppo.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/oppo.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">OPPO</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vmall.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/huawei.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">华为</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.apple.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/apple.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">iPhone</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.nokia.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/nokia.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">诺基亚</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more">
+                                    <a href="">
+                                        更多手机
+                                        <span class="right">&#xe8b9;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 笔记本 -->
+                    <li>
+                        <a href="">笔记本</a>
+                        <div class="nav-list">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="http://www.lenovo.com" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/lenovo.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">联想</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/hp.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">惠普</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/asus.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">华硕</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/acer.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">宏碁</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/huawei.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">华为</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/apple.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">MacBook</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/msi.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">微星</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more">
+                                    <a href="">
+                                        <p>更多笔记本</p>
+                                        <span class="right">&#xe8b9;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 平板 -->
+                    <li>
+                        <a href="">平板</a>
+                        <div class="nav-list">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="http://www.lenovo.com" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/mi.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">小米</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/huawei.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">华为</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/apple.png">
+                                            </div>
+                                            <p class="content-tittle ">iPad</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href=" " target="_blank ">
+                                            <div class="logo ">
+                                                <img src="images/honor.jpg" alt=" ">
+                                            </div>
+                                            <p class="content-tittle ">荣耀</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" " target="_blank ">
+                                            <div class="logo ">
+                                                <img src="images/xiaoxin.jpg " alt=" ">
+                                            </div>
+                                            <p class="content-tittle ">联想小新</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" " target="_blank ">
+                                            <div class="logo ">
+                                                <img src="images/iqoo.jpg " alt=" ">
+                                            </div>
+                                            <p class="content-tittle ">IQOO</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" " target="_blank ">
+                                            <div class="logo ">
+                                                <img src="images/samsung.png " alt=" ">
+                                            </div>
+                                            <p class="content-tittle ">三星</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more ">
+                                    <a href=" ">
+                                        <p>更多平板</p>
+                                        <span class="right ">&#xe8b9;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 电视 -->
+                    <li>
+                        <a href=" ">电视</a>
+                        <div class="nav-list ">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.mi.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/mi.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">小米</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.meizu.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/samsung.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">三星</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vivo.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/sony.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">索尼</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.oppo.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/tcl.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">TCL</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vmall.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/lg.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">LG</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.apple.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/huawei.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">华为</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.nokia.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/oppo.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">OPPO</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more">
+                                    <a href="">
+                                        <p>更多电视</p>
+                                        <span class="right">&#xe8b9;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 相机 -->
+                    <li>
+                        <a href=" ">相机</a>
+                        <div class="nav-list ">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/canon.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">佳能</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.meizu.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/nikon.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">尼康</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vivo.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/sony.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">索尼</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.oppo.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/laica.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">莱卡</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vmall.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/aolinbasi.png" alt="">
+                                            </div>
+                                            <p class="content-tittle">奥林巴斯</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.apple.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/keda.jpg" alt="">
+                                            </div>
+                                            <p class="content-tittle">柯达</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.nokia.com/" target="_blank">
+                                            <div class="logo">
+                                                <img src="images/hasu.jpeg" alt="">
+                                            </div>
+                                            <p class="content-tittle">哈苏</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more">
+                                    <a href="">
+                                        <p>更多相机</p>
+                                        <span class="right">&#xe8b9;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">更多数码商品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 广告轮播图部分 -->
+        <div class="banner ">
+            <ul class="picture">
+                <li>
+                    <a href="#"><img src="images/banner01.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/banner02.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/banner03.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/banner04.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/banner05.jpg" alt=""></a>
+                </li>
+            </ul>
+            <div id="button_box">
+                <a href="javascript:" class="button left_button"><span></span></a>
+                <a href="javascript:" class="button right_button"><span></span></a>
+            </div>
+            <ul class="dot">
+            </ul>
+        </div>
+    </div>
+    <!-- 页面主体内容 -->
+    <div class="main ">
+        <!-- 秒杀版块 -->
+        <div class="seckill">
+            <div class="head-box">
+                <p class="tittle">限时购</p>
+                <div class="time">
+                    <p>距结束还有：</p>
+                    <div class="countdown">
+                        <span class="hour"></span>
+                        <span class="minute"></span>
+                        <span class="second"></span>
+                    </div>
+                </div>
+                <div class="viewmore">
+                    <a href="">
+                        更多限时购商品
+                        <span class="right">&#xe8b9;</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="box">
+                    <a href="">
+                        <div class="commodityImages">
+                            <img src="images/MatePad.png" alt="">
+                        </div>
+                        <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                        <p class="commodityDesc">限时最高优惠100元</p>
+                        <div class="price">
+                            <p class="currentPrice">¥1849</p>
+                            <p class="originalPrice">¥1899</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="">
+                        <div class="commodityImages">
+                            <img src="images/civi.png" alt="">
+                        </div>
+                        <p class="commodityTittle">
+                            Xiaomi Civi 1S
+                        </p>
+                        <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                        <div class="price">
+                            <p class="currentPrice">¥2249</p>
+                            <p class="originalPrice">¥2299</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="">
+                        <div class="commodityImages">
+                            <img src="images/小新air14.png" alt="">
+                        </div>
+                        <p class="commodityTittle">
+                            小新air14 锐龙版
+                        </p>
+                        <p class="commodityDesc">
+                            全面屏办公轻薄本
+                        </p>
+                        <div class="price">
+                            <p class="currentPrice">¥3999</p>
+                            <p class="originalPrice">¥4199</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="">
+                        <div class="commodityImages">
+                            <img src="images/小米电视6.png" alt="">
+                        </div>
+                        <p class="commodityTittle">
+                            小米电视6 65” OLED
+                        </p>
+                        <p class="commodityDesc">OLED自发光屏｜4.6mm超薄全面屏</p>
+                        <div class="price">
+                            <p class="currentPrice">¥6699</p>
+                            <p class="originalPrice">¥6999</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="">
+                        <div class="commodityImages">
+                            <img src="images/小爱触屏音响.png" alt="">
+                        </div>
+                        <p class="commodityTittle">
+                            小米小爱触屏音箱
+                        </p>
+                        <p class="commodityDesc">好听，更好看</p>
+                        <div class="price">
+                            <p class="currentPrice">¥249</p>
+                            <p class="originalPrice">¥289</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 手机版块 -->
+        <div class="phone">
+            <div class="head-box">
+                <p class="tittle">手机</p>
+
+                <div class="viewmore">
+                    <a href="">
+                        查看更多
+                        <span class="right">&#xe8b9;</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="f1">
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="f2">
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/civi.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                Xiaomi Civi 1S
+                            </p>
+                            <p class="commodityDesc">原生美肌人像｜骁龙778G Plus</p>
+                            <div class="price">
+                                <p class="currentPrice">¥2249</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- 笔记本版块 -->
+        <div class="laptop">
+            <div class="head-box">
+                <p class="tittle">笔记本</p>
+
+                <div class="viewmore">
+                    <a href="">
+                        查看更多
+                        <span class="right">&#xe8b9;</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="f1">
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="f2">
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/小新air14.png" alt="">
+                            </div>
+                            <p class="commodityTittle">
+                                小新air14 锐龙版
+                            </p>
+                            <p class="commodityDesc">
+                                全面屏办公轻薄本
+                            </p>
+                            <div class="price">
+                                <p class="currentPrice">¥3999</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- 平板版块 -->
+        <div class="pad">
+            <div class="head-box">
+                <p class="tittle">平板</p>
+
+                <div class="viewmore">
+                    <a href="">
+                        查看更多
+                        <span class="right">&#xe8b9;</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="f1">
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="f2">
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <div class="commodityImages">
+                                <img src="images/MatePad.png" alt="">
+                            </div>
+                            <p class="commodityTittle">HUAWEI MatePad 10.4英寸</p>
+                            <p class="commodityDesc">限时最高优惠100元</p>
+                            <div class="price">
+                                <p class="currentPrice">¥1849</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="footer ">
+        <div class="content-footer">
+            <div class="logo">
+            </div>
+            <div class="copyright">
+                <p>Design by：重庆师范大学计算机与信息科学学院21计科对口高职朱耀建</p>
+                <p>网站仅供学习使用，素材均来自网络，侵删</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

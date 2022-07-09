@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/register.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-content">
+            <div class="logo" onclick="window.location.href='index.html'">
+            </div>
+            <span>欢迎注册</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-content">
+            <div class="register">
+                <div class="phone">
+                    <label>手机号码：</label>
+                    <div class="phoneinfo">
+                        <input type="text" name="" id="inputtel" placeholder="请输入手机号">
+                    </div>
+                </div>
+                <div class="tips">
+                    <span class="error">&#xe685;</span>
+                    <span class="error-content"></span>
+                </div>
+                <div class="mess">
+                    <label>&emsp;验证码：</label>
+                    <div class="messinfo">
+                        <input type="text" name="" id="inputmess" placeholder="请输入验证码" maxlength="4">
+                        <button>点击获取验证码</button>
+                    </div>
+                </div>
+                <div class="login">
+                    <a href="login.html">
+                        <p>已有账号，去登录</p>
+                    </a>
+                </div>
+                <div class="submitbox">
+                    <button type="submit" name="submit">立即注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

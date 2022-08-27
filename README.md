@@ -1,5 +1,5 @@
 # ZMall
-html+css+js制作的简易数码商城 
+html+css+js制作的数码购物商城 
 # 页面内容
 **主页**![image](https://github.com/Mr-weekend/ZMall-run/blob/1056383da9bdb7da4dde3c1a375ec71931300edb/%E4%B8%BB%E9%A1%B5.png)
 **登录页**![image](https://github.com/Mr-weekend/ZMall-run/blob/1056383da9bdb7da4dde3c1a375ec71931300edb/%E7%99%BB%E5%BD%95%E9%A1%B5.png)
@@ -9,4 +9,4 @@ html+css+js制作的简易数码商城
 # 实现的js
 轮播图、下拉菜单、标签栏切换、倒计时、简单的表单验证等
 # web前端开发课程设计
-这是于2021-2022下期制作的Web前端课程设计
+于2021-2022下期制作的Web前端开发课程设计
